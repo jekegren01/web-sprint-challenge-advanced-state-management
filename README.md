@@ -1,4 +1,4 @@
-# Advanced State Management Sprint Challenge
+<!-- # Advanced State Management Sprint Challenge
 
 **Read these instructions carefully. Understand exactly what is expected _before_ starting this Sprint Challenge.**
 
@@ -9,7 +9,6 @@ This is an individual assessment. All work must be your own. Your challenge scor
 You are not allowed to collaborate during the sprint challenge. However, you are encouraged to follow the twenty-minute rule and seek support from your TL if you need direction. 
 
 _You have **three hours** to complete this challenge. Plan your time accordingly._
-
 
 ## Introduction
 
@@ -115,7 +114,6 @@ Example of object created in Smurf DB:
 ];
 ```
 
-
 ### Task 3: Stretch Goals 
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
@@ -131,4 +129,4 @@ Follow these steps for completing your project.
 - [ ] Add your team lead as a reviewer on the pull-request
 - [ ] Your team lead will count the project as complete after receiving your pull-request
 
-
+ -->
