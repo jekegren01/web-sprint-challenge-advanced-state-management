@@ -12,6 +12,8 @@ const initialState = {
 };
 
 //this is the example data inside of the smurfs array
+//This will double as the keys for the form to create the smurf
+
 // {
 //     name: 'Brainey',
 //     age: 200,
