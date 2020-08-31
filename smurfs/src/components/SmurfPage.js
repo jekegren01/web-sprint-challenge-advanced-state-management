@@ -6,7 +6,7 @@ import {getSmurf} from "../actions";
 const SmurfPage = props => {
 
     const {id} = useParams();
-    
+
     useEffect(()=>{
         props.getSmurf(id);
     }, [])
@@ -15,7 +15,7 @@ const SmurfPage = props => {
         <div className="smurf-page">
             {props.smurf && 
                 <div>
-                    <h1>{props.smurf.name}</h1>
+                    <h2>{props.smurf.name}</h2>
                     <p>Age: {props.smurf.age}</p>
                     <p>Height: {props.smurf.height}</p>
                 </div>

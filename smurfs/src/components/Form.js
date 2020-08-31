@@ -10,49 +10,55 @@ const Form = props => {
     });
 
     const handleChange = e => {
-        setFormState({
-            ...formState,
+        setForm({
+            ...form,
             [e.target.name]: e.target.value
         });
     }
 
-    const Submit = e =>{
+    const submit = e =>{
         e.preventDefault();
-        props.createSmurf(formState);
+        props.createSmurf(form);
     }
 
     return (
-        <form onSubmit={Submit}>
-            <p>Create a Smurf</p>
+        <form onSubmit={submit}>
+            <p>Name your own Smurf</p>
             <div className="form-input">
                 <input
                 onChange={handleChange}
-                value={formState.name}
-                type="text" name="name"
+                value={form.name}
+                type="text"
+                name="name"
                 label="name"
+                placeholder='name'
                 />
                 <input
                 onChange={handleChange}
                 value={form.age}
-                type="number" name="age"
+                type="number"
+                name="age"
                 label="age"
+                placeholder='age'
                 />
                 <input
                 onChange={handleChange}
                 value={form.height}
-                type="text" name="height"
+                type="text"
+                name="height"
                 label="height"
+                placeholder='height'
                 />
             </div>
             <button>Add Smurf</button>
-            {props.creatingSmurf && <p>Creating smurf...</p>}
+            {props.createSmurf && <p>Creating smurf...</p>}
         </form>
     )
 }
 
 const mapStateToProps = state => {
     return {
-        creatingSmurf: state.creatingSmurf,
+        createSmurf: state.createSmurf,
     }
 }
 
