@@ -15,7 +15,7 @@ const App = (props) => {
       <Form />
       {props.smurfs.map(smurf => {
                 return <Smurf key={smurf.id} smurf={smurf}/>})}
-      <Route path="/smurf/:id">
+      <Route exact path="/smurf/:id">
         <SmurfPage />
       </Route>
     </div>
