@@ -24,7 +24,7 @@ export const SMURFS_FAILURE = 'SMURFS_FAILURE';
 export const SMURF_SUCCESS = 'SMURF_SUCCESS';
 export const CREATE_SMURF_START = 'CREATE_SMURF_START';
 export const CREATE_SMURF_SUCCESS = 'CREATE_SMURF_SUCCESS';
-export const CREATE_SMURF_FAILURE = 'CREATE_SMURF_FAILURE'
+export const CREATE_SMURF_FAILURE = 'CREATE_SMURF_FAILURE';
 
 export const reducer = (state = initialState, action) => {
     switch (action.type) {
