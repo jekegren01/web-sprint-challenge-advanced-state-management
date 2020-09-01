@@ -13,11 +13,11 @@ const App = (props) => {
     <div className="App">
       <h1>SMURFS! W/Redux</h1>
       <Form />
-      {props.smurfs.map(smurf => {
-                return <Smurf key={smurf.id} smurf={smurf}/>})}
       <Route exact path="/smurf/:id">
         <SmurfPage />
       </Route>
+      {props.smurfs.map(smurf => {
+                return <Smurf key={smurf.id} smurf={smurf}/>})}
     </div>
   );
 }
